@@ -24,39 +24,39 @@ setInterval(showNextSlide, 3000);
 //---------------------------------------------------------------Слайдер в отзывы 
 
 
-// let currentIndes = 0;
-// const item = document.querySelectorAll('.iteme');
-// const totalItem = item.length;
+let currentIndes = 0;
+const item = document.querySelectorAll('.iteme');
+const totalItem = item.length;
 
-// function showNextItem() {
-//     item[currentIndes].classList.remove('showw');
-//     currentIndes = (currentIndes + 1) % totalItem;
-//     item[currentIndes].classList.add('showw');
-// }
+function showNextItem() {
+    item[currentIndes].classList.remove('showw');
+    currentIndes = (currentIndes + 1) % totalItem;
+    item[currentIndes].classList.add('showw');
+}
 
-// // Показать первый элемент
-// item[currentIndes].classList.add('showw');
+// Показать первый элемент
+item[currentIndes].classList.add('showw');
 
-// // Установить интервал на переключение
-// setInterval(showNextItem, 5000);
+// Установить интервал на переключение
+setInterval(showNextItem, 5000);
 
-// // 
+// 
 
-// let currentIndess = 0;
-// const itemm = document.querySelectorAll('.itemm');
-// const totalItemm = itemm.length;
+let currentIndess = 0;
+const itemm = document.querySelectorAll('.itemm');
+const totalItemm = itemm.length;
 
-// function showNextItemm() {
-//     itemm[currentIndess].classList.remove('show');
-//     currentIndess = (currentIndess + 1) % totalItemm;
-//     itemm[currentIndess].classList.add('show');
-// }
+function showNextItemm() {
+    itemm[currentIndess].classList.remove('show');
+    currentIndess = (currentIndess + 1) % totalItemm;
+    itemm[currentIndess].classList.add('show');
+}
 
-// // Показать первый элемент
-// itemm[currentIndess].classList.add('show');
+// Показать первый элемент
+itemm[currentIndess].classList.add('show');
 
-// // Установить интервал на переключение
-// setInterval(showNextItemm, 5000);
+// Установить интервал на переключение
+setInterval(showNextItemm, 5000);
 
 // ------------------------------------------------------------popups
 // Получение элементов
