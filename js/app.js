@@ -1,7 +1,7 @@
 let currentIndex = 0;
 const items = document.querySelectorAll('.sliderItem');
 const totalItems = items.length;
-const itemsToShow = 4; // Количество одновременно показываемых элементов
+const itemsToShow = 4; // 
 
 function showNextSlide() {
     // Убираем текущие слайды
@@ -9,16 +9,13 @@ function showNextSlide() {
         items[(currentIndex + i) % totalItems].classList.remove('show');
     }
 
-    // Обновляем индекс для отображения следующего набора элементов
     currentIndex = (currentIndex + 1) % totalItems;
 
-    // Показываем следующие 4 слайда, начиная с текущего
     for (let i = 0; i < itemsToShow; i++) {
         items[(currentIndex + i) % totalItems].classList.add('show');
     }
 }
 
-// Запускаем слайдер каждые 3 секунды
 setInterval(showNextSlide, 3000);
 
 //---------------------------------------------------------------Слайдер в отзывы 
@@ -34,10 +31,8 @@ function showNextItem() {
     item[currentIndes].classList.add('showw');
 }
 
-// Показать первый элемент
 item[currentIndes].classList.add('showw');
 
-// Установить интервал на переключение
 setInterval(showNextItem, 5000);
 
 // 
@@ -52,14 +47,11 @@ function showNextItemm() {
     itemm[currentIndess].classList.add('show');
 }
 
-// Показать первый элемент
 itemm[currentIndess].classList.add('show');
 
-// Установить интервал на переключение
 setInterval(showNextItemm, 5000);
 
 // ------------------------------------------------------------popups
-// Получение элементов
 const callElements = {
     price: document.getElementById('callPrice'),
     process: document.getElementById('callProcess'),
@@ -92,7 +84,6 @@ const closeElements = {
     politic: document.getElementById('clsPolitic'),
 };
 
-// Функция для добавления обработчиков событий
 const setupEventListeners = (callElement, winElement, closeElement) => {
     callElement.addEventListener('click', () => {
         winElement.classList.add('show');
@@ -103,7 +94,6 @@ const setupEventListeners = (callElement, winElement, closeElement) => {
     });
 };
 
-// Установка обработчиков событий для всех элементов
 setupEventListeners(callElements.price, winElements.price, closeElements.price);
 setupEventListeners(callElements.process, winElements.process, closeElements.process);
 setupEventListeners(callElements.form, winElements.form, closeElements.form);
@@ -165,22 +155,18 @@ window.addEventListener("DOMContentLoaded", function() {
 let currentIndexx = 0;
 const itemx = document.querySelectorAll('.itemx');
 const totalItemx = itemx.length;
-const itemxToShow = 3; // Количество одновременно показываемых элементов
-
+const itemxToShow = 3; 
 function showNextSlidex() {
-    // Убираем текущие 3 слайда
+
     for (let i = 0; i < itemxToShow; i++) {
         itemx[(currentIndexx + i) % totalItemx].classList.remove('show');
     }
 
-    // Обновляем индекс для отображения следующего набора элементов
     currentIndexx = (currentIndexx + itemxToShow) % totalItemx;
 
-    // Показываем следующие 3 слайда
     for (let i = 0; i < itemxToShow; i++) {
         itemx[(currentIndexx + i) % totalItemx].classList.add('show');
     }
 }
 
-// Запускаем слайдер каждые 3 секунды
 setInterval(showNextSlidex, 5000);
