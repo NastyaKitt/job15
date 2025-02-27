@@ -216,6 +216,12 @@
             }
         }
     }
+    .heroSection {
+        height: auto;
+        & span {
+            margin-bottom: 5rem;
+        }
+    }
     header {
         & button {
             padding: 1rem 2rem;
@@ -229,13 +235,25 @@
             font-size: 1.25rem;
         }
     }
-    
+    & .review1 {
+        & .slider {
+            & .iteme {
+                width: 50%;
+                &.showw {
+                    width: 15%;
+                    max-height: 250rem;
+                    height: auto;
+                }
+            }
+        }
+    }
         
     .heroSection {
         & .down {
             & .sliders {
                 & .sliderItem {
                     &.show {
+                        width: 15%;
                         width: 40%;
                     }
                 }
@@ -244,7 +262,6 @@
     }
     .heroSection {
         padding: 5rem 2rem 0;
-        height: 70vh;
     }
     .whyInteres {
         width: calc(100% - 4rem);
@@ -266,7 +283,9 @@
             & .slider {
                 & .iteme {
                     &.showw {
-                        width: 30%;
+                        width: 25rem;
+                        height: auto;
+                        max-height: 100rem;
                     }
                 }
             }
@@ -280,24 +299,12 @@
     }
     .heroSection {
         padding: 5rem 2rem 0;
-        height: 50vh;
     }
     header {
         align-items: center;
         flex-direction: column;
         & button {
             margin-top: 1rem;
-        }
-    }
-    .reviews {
-        & .review1 {
-            & .slider {
-                & .iteme {
-                    &.showw {
-                        width: 25%;
-                    }
-                }
-            }
         }
     }
     .price,.process,.forma,.reviews,.me,.FAQ,.politica {
@@ -308,7 +315,15 @@
             background-color: #fff;
         }
     }
-
+    .popupBut {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 5rem;
+        height: 4rem;
+        border: none;
+        background-color: transparent;
+    }
 }
 @media (max-width:320px) {
     html {

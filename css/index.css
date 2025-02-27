@@ -471,10 +471,11 @@ footer {
             display: flex;
             flex-direction: column;
             & input {
+
                 height: 4rem;
                 background-color: transparent;
                 border: 1px solid #000;
-                color: #fff;
+                color: #000;
                 padding-left: 1rem;
                 border-radius: 1rem;
                 margin-bottom: 1rem;
@@ -540,10 +541,11 @@ footer {
                 right: 200%;
                 position: relative;
                 max-height: 1px;
+                display: none;
                 &.showw {
+                    display: block;
                     opacity: 1;
                     right: 0;
-                    transition: opacity 2s, right 2s, visibility 4s;
                     visibility: visible;
                     padding: 1rem;
                     width: 50%;
@@ -581,7 +583,7 @@ footer {
                     visibility: visible;
                     opacity: 1;
                     right: 0;
-                    transition: opacity 2s, right 2s, visibility 4s;
+                    transition: opacity 1s, right 1s, visibility 2s;
                     padding: 1rem;
                     width: 75%;
                     height: auto;
