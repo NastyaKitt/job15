@@ -291,6 +291,15 @@
             }
         }
     }
+    .price {
+        & .priceItems {
+            & span {
+                flex-direction: column;
+            }
+        }
+    }
+    
+    
 
 }
 @media (max-width: 420px) {
