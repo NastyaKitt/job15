@@ -1,0 +1,317 @@
+@media (max-width: 1520px) {
+    .process {
+        & .items {
+            & .item {
+                width: 25rem;
+            }
+        }
+    }
+    
+    }
+@media (max-width: 1420px) {
+    .process {
+        & .items {
+            & .item {
+                width: 22rem;
+            }
+        }
+    }
+
+}
+@media (max-width: 1370px) {
+    .whyInteres {
+        & .whyInteresItems {
+            & .whyInteresItem {
+                width: 20rem;
+                height: 30rem;
+            }
+        }
+    }
+    .price,.process,.reviews,.me,.FAQ{
+        footer {
+            height: auto;
+            padding-bottom: 5rem;
+            & form {
+                flex-direction: column;
+                align-items: center;
+                & input {
+                    margin-top: 1rem;
+                    width: 100%;
+                    padding-bottom: 1rem;
+                }
+            }
+       }
+    }       
+    .reviews {
+        & .review1 {
+            & .slider {
+                & .iteme {
+                    &.showw {
+                        width: 50%;
+                        max-height: 50rem;
+                    }
+                }
+            }
+        }
+    }
+    .reviews {
+        & .review2 {
+            & .slider {
+                & .itemm {
+                    &.show {
+                        width: 100%;
+                        max-height:1000rem ;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}
+@media (max-width: 1320px) {
+    .heroSection {
+        height: 90vh;
+        padding: 5rem 10rem 0;
+    }
+    .whyInteres {
+        width: calc(100% - 20rem);
+        margin: 0 10rem;
+        & .whyInteresItems {
+            justify-content: space-around;
+        }
+    }
+    .price,.process,.forma,.reviews,.me,.FAQ,.politica {
+        width: calc(100% - 20rem);
+        margin: 0 10rem;
+        
+    }
+}
+@media (max-width: 1120px) {
+    .process {
+        & .items {
+            & .item {
+                width: 20rem;
+            }
+        }
+    }
+
+}
+@media (max-width: 1070px) {
+    .process {
+        & .items {
+            flex-direction: column;
+        }
+    }
+    .forma {
+        & form {
+            width: 85%;
+        }
+    }
+    .reviews {
+        & .review2 {
+            width: auto;
+            & .slider {
+                width: auto;
+                & .itemm {
+                    width: auto;
+                    &.show {
+                        width: auto;
+                        flex-direction: column;
+                        & span {
+                            width: 100%;
+                            margin-top: 1rem;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media (max-width: 1024px) {
+    html {
+        font-size: 14px;
+    }    
+}
+@media (max-width: 920px) {
+    .heroSection {
+        padding: 5rem 6rem 0;
+        height: 70vh;
+    }
+    .whyInteres {
+        width: calc(100% - 12rem);
+        margin: 0 6rem;
+    }
+    .price,.process,.forma,.reviews,.me,.FAQ,.politica {
+        width: calc(100% - 12rem);
+        margin: 0 6rem;
+        
+    }
+    
+}
+@media (max-width: 820px) {
+    .heroSection {
+        height: 70vh;
+    }
+    .reviews {
+        & .review1 {
+            & .slider {
+                & .iteme {
+                    &.showw {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media (max-width: 720px) {
+    .whyInteres {
+        & .whyInteresItems {
+            & .whyInteresItem {
+                width: 30rem;
+            }
+        }
+    }
+    .process {
+        & .items {
+            & .item {
+                width: 30rem;
+            }
+        }
+    }
+    .FAQ {
+        & main {
+            & h1 {
+                margin-top: 5rem;
+            }
+        }
+    }
+    .process {
+        & .slider {
+            & h1 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
+    
+    
+}
+@media (max-width: 620px) {
+    .heroSection {
+        & .down {
+            & .sliders {
+                & .sliderItem {
+                    &.show {
+                        & img {
+                            width: 50%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    header {
+        & button {
+            padding: 1rem 2rem;
+            background-color: #7fc7ff;
+            border: 1px solid #000;
+        }
+    }
+    
+    header {
+        & h2 {
+            font-size: 1.25rem;
+        }
+    }
+    
+        
+    .heroSection {
+        & .down {
+            & .sliders {
+                & .sliderItem {
+                    &.show {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+    .heroSection {
+        padding: 5rem 2rem 0;
+        height: 70vh;
+    }
+    .whyInteres {
+        width: calc(100% - 4rem);
+        margin: 0 2rem;
+    }
+    .price,.process,.forma,.reviews,.me,.FAQ,.politica {
+        width: calc(100% - 4rem);
+        margin: 0 2rem;
+        
+    }
+
+}
+@media (max-width: 520px) {
+    html {
+        font-size: 12px;
+    }
+    .reviews {
+        & .review1 {
+            & .slider {
+                & .iteme {
+                    &.showw {
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media (max-width: 420px) {
+    html {
+        font-size: 10px;
+    }
+    .heroSection {
+        padding: 5rem 2rem 0;
+        height: 50vh;
+    }
+    header {
+        align-items: center;
+        flex-direction: column;
+        & button {
+            margin-top: 1rem;
+        }
+    }
+    .reviews {
+        & .review1 {
+            & .slider {
+                & .iteme {
+                    &.showw {
+                        width: 25%;
+                    }
+                }
+            }
+        }
+    }
+    .price,.process,.forma,.reviews,.me,.FAQ,.politica {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &.show {
+            background-color: #fff;
+        }
+    }
+
+}
+@media (max-width:320px) {
+    html {
+        font-size: 8px;
+    }    
+}
